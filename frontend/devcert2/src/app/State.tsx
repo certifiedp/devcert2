@@ -2,9 +2,10 @@ import { useReadContract } from 'wagmi'
 import { abi } from './abi'
 import { config } from './config'
 
-export function State() {
+export default function State() {
   const { data } = useReadContract({
     abi,
+    address: '0x812E4424F0301CAF0cE3079ba5b0f9875D618868',
     functionName: 'pool_state',
     config,
   })

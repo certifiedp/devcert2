@@ -1,7 +1,7 @@
 "use client"
 
 import { useAccount, useConnect, useDisconnect } from 'wagmi'
-import { State } from './State'
+import State from './State'
 
 
 function App() {
